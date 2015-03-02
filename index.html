@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Matt Gumbley </title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+   <body>
+  <h1>Introduction to Programming</h1>
+   <div class="lesson">
+     <h2>Table of Contents</h2>
+     <div class="concept">
+       <div class="concept-description">
+         <ul>
+            <li><a href="#lesson-1">Lesson One: The Basics of the Web and HTML</a></li>
+             <ul>
+              <li><a href="#lesson-1-1">An overview of the Internet</li>
+              <li><a href="#lesson-1-2">An overview of HTML</li>
+             </ul>
+            <li><a href="#lesson-2">Lesson Two: Creating a Structured Document with HTML</a></li>
+             <ul>
+              <li><a href="#lesson-2-1">The Building metaphor</a></li>
+              <li><a href="#lesson-2-2">The Tree Like Structure / Branching Structure of HTML</a></li>
+              <li><a href="#lesson-2-3">The relationship between indented HTML and boxes</a></li>
+              <li><a href="#lesson-2-4">Text Editors (for programming)</a></li>
+             </ul>
+            <li><a href="#lesson-3">Lesson Three: Adding CSS style to HTML structure.</a></li>
+             <ul>
+              <li><a href="#lesson-3-1">CSS Cascading Style Sheets </a></li>
+              <li><a href="#lesson-3-2">Inheritance</a></li>
+              <li><a href="#lesson-3-3">CSS Selectors </a></li>
+             </ul>
+          </ul>
+       </div>
+     </div>
+   </div>
+   <br>
+  <div class="lesson">
+    <h2><a name="lesson-1">Lesson One:  Webpages, Documents and Structure</h2>
+    <div class="concept">
+      <div class="concept-title">
+        <a name="lesson-1-1">An overview of the Internet
+      </div>
+      <div class="concept-description">
+        <p>
+          <img class=float-left src="http://cdn5.howtogeek.com/wp-content/uploads/2014/02/the-internet-of-things.jpg"> The Web is an information system of interlinked hypertext documents. Individual document pages on the Web are called pages and are accessed with browsers on the user's computer. Web pages may contain text, images, videos, and other multimedia components, as well as web navigation features like hyperlinks.
+        </p>
+        <p>
+          Tim Berners-Lee, a then CERN employee, is considered the inventor of the Web. Berners-Lee proposed in 1990 to use hypertext "to link and access information of various kinds as a web of nodes in which the user can browse at will.
+        </p>
+        <p>
+          The Web is still a collection of HTML documents. Even though there can be documents, images and videos and many other types of media on line the glue that holds them all together is HTML. 
+        </p>
+        <p>
+          There are three major components of the Web
+          <dl>
+            <dt>
+              Browsers:
+            </dt>
+            <dd>
+              <p>
+                A browser is a software application for retrieving,     presenting and traversing information resources on the Web. An information resource is identified by a Uniform Resource Identifier (URI/URL) which may be a web page, image, video or other piece of content. Hyperlinks present in resources enable users easily to navigate their browsers to related resources
+              </p>
+            </dd>
+            <dt>
+              The Internet:
+            </dt>
+            <dd>
+              <p>
+                The Internet is a global system of interconnected computer networks which use the standard Internet protocol suite (TCP/IP) to link billions of devices. It is a network of networks  that consists of millions of private, public, academic, business, and government networks of local to global scope, linked by  electronic, wireless, and optical networking technologies. 
+              </p>
+              <p>
+                The Internet carries an extensive range of information resources and services, such as the inter-linked hypertext documents and applications of the World Wide Web (WWW), the infrastructure to support email, and peer-to-peer networks for file sharing and telephony.
+              </p>
+            </dd>
+            <dt>Servers:</dt>
+            <dd>
+              <p>
+                A web server is an information technology that processes requests via HTTP to distribute information on the World Wide Web. The term can refer either to the entire computer system, an appliance, or specifically to the software that accepts and supervises the HTTP requests.
+              </p>
+              <p>
+                Browsers make requests via HTTP and the Internet to Servers. Servers respond with files for the browser to display.
+              </p>
+              <p>
+                The most common use of web servers is to host websites, but there are other uses such as gaming, data storage, running enterprise applications, handling email, FTP, or other web uses.
+              </p>
+            </dd>
+          </dl>
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <a name="lesson-1-2">An overview of HTML
+      </div>
+      <div class="concept-description">
+        <p>
+          <img class=float-right src="http://yukonstruct.com/wp-content/uploads/2014/09/html.jpg">
+          HyperText Markup Language commonly referred to as HTML is used to create web pages and is the main document type on the web. Hyper Links connect the web together.HTML  is written in the form of HTML elements, which consist of tags enclosed in angle brackets. HTML tags most commonly come in pairs like, although some tags represent empty elements and so are unpaired.
+        </p>
+        <p>
+          Web browsers read HTML files and use them to interpret and compose web pages. HTML describes the structure of a website semantically along with cues for presentation, making it a markup language, rather than a programming language.
+        </p>
+        <p>
+          HTML elements form the building blocks of all websites. HTML allows images and objects to be embedded and can be used to create interactive forms. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. It can embed scripts written in languages such as JavaScript which affect the behavior of HTML web pages.
+        </p>
+      </div>
+    </div>
+  </div>
+ <br>
+  <div class="lesson">
+    <h2><a name="lesson-2">Lesson Two: Creating a Structured Document with HTML</h2>
+    <div class="concept">
+      <div class="concept-title">
+        <a name="lesson-2-1">The Building metaphor
+      </div>
+      <div class="concept-description">
+        <p>It can be useful to think of websites as a building:</p>
+        <ul>
+          <li>HTML files are like the main structure. Where a wall is placed. What rooms are bedrooms what rooms are living rooms ect.</li>
+          <li>CSS files are the style. What color are the walls, what style is the carpeting ect.</li>
+          <li>Javascript files are then your interactive components. Like your garage door opener or television remote. They change some elements of the building.</li>
+        </ul>
+        <p>To take the metaphor a stage further; As there are rules that dictate both how a house is constructed and the ways in which a house once built behaves, there are rules for web pages. You can not have a television floating in mid air in the bathroom.</p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <a name="lesson-2-2">The Tree Like Structure / Branching Structure of HTML
+      </div>
+      <div class="concept-description">
+        <p>
+          A tree structure or tree diagram is a way of representing the hierarchical nature of a structure in a graphical form. It is named a "tree structure" because the classic representation resembles a tree, even though the chart is generally upside down compared to an actual tree, with the "root" at the top and the "leaves" at the bottom.
+        </p>
+        <p>
+          In computer science, a tree is a widely used abstract data type (ADT) or data structure implementing this ADT that simulates a hierarchical tree structure, with a root value and subtrees of children, represented as a set of linked nodes.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <a name="lesson-2-3">The relationship between indented HTML and boxes
+      </div>
+      <div class="concept-description">
+        <p>
+          When you read an HTML document as 
+          <span class="italic">text</span>, you see a wave of 
+          changing indentations going up and down the left side 
+          of the document. The more indented an element is, the 
+          more deeply nested its corresponding "box" is.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <a name="lesson-2-3">Text Editors (for programming)
+      </div>
+      <div class="concept-description">
+        <p>
+          When writing code, programmers use special text editors 
+          (like Sublime Text for example). These editors make the 
+          programmer's life easier. For example, some text editors 
+          will automatically generate a closing HTML tag when you 
+          write an opening tag.
+        </p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="lesson">
+    <h2><a name="lesson-3">Lesson Three: Adding CSS style to HTML structure.</h2>
+    <div class="concept">
+      <div class="concept-title">
+        <a name="lesson-3-1">CSS Cascading Style Sheets 
+      </div>
+      <div class="concept-description">
+        <p>
+          CSS is short for Cascading Style Sheets, a feature that works with HTML to give both Web site developers and users more control over how pages are displayed. With CSS, designers and users can create 'style sheets' that define how different elements appear. 
+        </p>
+         <p>
+           'Cascading' refers to the fact that multiple style sheets can be applied to the same Web page. It is therefore possible to have several style sheets that can be referenced in HTML.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <a name="lesson-3-2">Inheritance
+      </div>
+      <div class="concept-description">
+        <p>
+         Inheritance is a key feature in CSS, it relies on the ancestor-descendant relationship to operate. Inheritance is the mechanism by which properties are applied not only to a specified element, but also to its descendants.  Inheritance relies on the document tree, which is the hierarchy of (X)HTML elements in a page.
+        </p>
+        <p>
+         Inheritance prevents certain properties from being declared over and over again in a style sheet, allowing the software developers to write less CSS. It enhances faster-loading of web pages by users and enables the clients to save money on bandwidth and development costs. 
+        </p>
+        <p>
+          <span class="bold">Important : The most specific rule is applied to every element. You can use more specific CSS override inheritance.</span>
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <a name="lesson-3-3">CSS Selectors
+      </div>
+      <div class="concept-description">
+        <p>
+          <img class=float-right src="https://en-support.files.wordpress.com/2011/09/css-selectors-lrg.png">
+          CSS selectors are used to "find" (or select) HTML elements based on their id, class, type, attribute, and more.
+          <ul>
+           <li><span>The element Selector</span>.The element Selector.The element selector selects elements based on the element name.</li>
+           <li><span>The id Selector</span>.The id selector uses the id attribute of an HTML element to select a specific element. An id should be unique within a page, so the id selector is used if you want to select a single, unique element. To select an element with a specific id, write a hash character, followed by the id of the element.</li>
+           <li><span>The class Selector</span>.The class selector selects elements with a specific class attribute. To select elements with a specific class, write a period character, followed by the name of the class:</li>
+           <li><span>Grouping Selectors</span>If you have elements with the same style definitions you can group them together.</li>
+         </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</body>
+
+</html>
